@@ -53,12 +53,12 @@ The Stock Market Data Visualization Dashboard is an interactive platform develop
 
 1. **Clone the Repository**
     ```bash
-    git clone (https://github.com/Anubhab-Dey/Sunyata-OU-Intern-Assignment)
+    git clone https://github.com/Anubhab-Dey/Sunyata-OU-Intern-Assignment.git
     ```
 
 2. **Navigate to the Project Folder**
     ```bash
-    cd StockMarketDashboard
+    cd Sunyata-OU-Intern-Assignment
     ```
 
 3. **Install Dependencies**
