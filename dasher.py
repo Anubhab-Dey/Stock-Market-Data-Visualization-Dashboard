@@ -13,7 +13,7 @@ def shorten_text(text, max_len=40):
     return text if len(text) <= max_len else text[:max_len-3] + " ..."
 
 # Database connection (replace with your actual path)
-conn = sqlite3.connect('C:/Users/anubh/Programs/Sunyata OU Internship Assignment/stock_data.db')
+conn = sqlite3.connect('stock_data.db')
 df = pd.read_sql_query("SELECT * FROM stock_data", conn)
 
 # Mapping of metrics to human-readable labels

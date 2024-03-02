@@ -37,7 +37,7 @@ def fetch_stock_data(symbol):
     return stock_data
 
 def create_table():
-    conn = sqlite3.connect('C:/Users/anubh/Programs/Sunyata OU Internship Assignment/stock_data.db')
+    conn = sqlite3.connect('stock_data.db')
     cursor = conn.cursor()
     
     cursor.execute('''CREATE TABLE IF NOT EXISTS stock_data
@@ -48,9 +48,13 @@ def create_table():
     conn.close()
 
 def insert_stock_data(stock_data):
-    conn = sqlite3.connect('C:/Users/anubh/Programs/Sunyata OU Internship Assignment/stock_data.db')
+    conn = sqlite3.connect('stock_data.db')
     cursor = conn.cursor()
 
+    # Delete existing data for the given symbol
+    cursor.execute("DELETE FROM stock_data WHERE ticker = ?", (stock_data[0]['ticker'],))
+
+    # Insert new data
     for record in stock_data:
         cursor.execute(
             "INSERT INTO stock_data (date, ticker, open_price, close_price, volume) VALUES (?, ?, ?, ?, ?)",
@@ -61,7 +65,7 @@ def insert_stock_data(stock_data):
     conn.close()
 
 def calculate_metrics(symbol):
-    conn = sqlite3.connect('C:/Users/anubh/Programs/Sunyata OU Internship Assignment/stock_data.db')
+    conn = sqlite3.connect('stock_data.db')
     df = pd.read_sql_query(f"SELECT date, close_price FROM stock_data WHERE ticker = '{symbol}' ORDER BY date ASC", conn)
     
     df['daily_return'] = df['close_price'].pct_change(1)
