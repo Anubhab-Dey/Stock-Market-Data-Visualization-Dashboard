@@ -35,11 +35,6 @@ The Stock Market Data Visualization Dashboard is an interactive platform develop
 - **Additional Visuals**: Includes a heatmap for stock correlation and a table for key performance metrics.
 
 
-### Dashboard Design
-
-- **UI/UX**: Designed to be user-friendly and visually appealing.
-- **Styling**: Custom styling applied through an external CSS file (`styles.css`).
-
 ## Getting Started
 
 ### Prerequisites
@@ -50,12 +45,12 @@ The Stock Market Data Visualization Dashboard is an interactive platform develop
 
 1. **Clone the Repository**
     ```bash
-    git clone https://github.com/Anubhab-Dey/Sunyata-OU-Intern-Assignment.git
+    git clone https://github.com/Anubhab-Dey/Stock-Market-Data-Visualization-Dashboard.git
     ```
 
 2. **Navigate to the Project Folder**
     ```bash
-    cd Sunyata-OU-Intern-Assignment
+    cd Stock-Market-Data-Visualization-Dashboard
     ```
 
 3. **Install Dependencies**
@@ -63,7 +58,7 @@ The Stock Market Data Visualization Dashboard is an interactive platform develop
     pip install -r requirements.txt
     ```
 
-4. **Run Data Launcher Script**
+4. **Run the Launcher Script**
     ```bash
     python launcher.py
     ```
