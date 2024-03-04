@@ -32,7 +32,7 @@ The Stock Market Data Visualization Dashboard is an interactive platform develop
 - **Framework**: Uses Dash for backend logic and interactivity.
 - **Charts**: Line charts visualize historical stock price trends.
 - **Interactivity**: Features like dropdowns and sliders enable users to select different stocks and timeframes.
-- **Additional Visuals**: Includes a heatmap for stock correlation and a table for key performance metrics.
+- **Additional Visuals**: Includes a heatmap for stock correlation.
 
 
 ## Getting Started
