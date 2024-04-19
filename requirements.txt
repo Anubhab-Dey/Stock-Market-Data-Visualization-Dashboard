@@ -2,7 +2,7 @@
 # Updated Requirements for Stock Market Data Visualization Dashboard
 
 # Web framework
-Dash
+dash
 
 # Data manipulation
 pandas
